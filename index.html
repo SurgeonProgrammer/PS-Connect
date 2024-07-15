@@ -1,0 +1,129 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+    body {
+      font-family: 'Roboto', sans-serif;
+      
+    } 
+  </style>
+
+         
+</head>
+<body class="bg[#E9E9E9]" style=" min-height:100vh; font-family:Roboto; ">
+ <nav class="bg-white px-9 shadow-sm border h-[80px] flex items-center pr-[40px]">
+    <ul class="sidebar fixed top-0 right-0 h-screen z-[800] bg-white shadow-xl  flex-col items-start p-[30px] space-y-[30px] justify-start hidden w-full md:w-[250px] opacity-80 font-bold text-pink-800">
+        <li onclick="hideSidebar()" class="mr-auto w-full"><button href=""><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button></li>
+        <li><a href="">Home</a></li>
+        <li><a href="">Connect</a></li>
+        <li><a href="">About</a></li>
+    </ul>
+
+
+    <ul class="w-full flex justify-center  items-center  h-[50px] space-x-[50px] font-semibold text-black">
+        <li class="mr-auto flex items-start"><a href=""><span class="text-[40px] font-bold text-pink-700">S</span><span class="text-[40px] font-bold text-blue-700">N</span> 
+            <div> <span class="text-[20px] font-bold">c<svg class="inline-block" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill=red><path d="M480-540q-66 0-123-24.5T256-632l72-43q24 20 52 33t60 18v-212l40-24 40 24v212q32-5 60-18t52-33l72 43q-44 43-101 67.5T480-540Zm-49 375-74-39q2-9 2.5-18t.5-18q0-23-4-45.5T344-328L161-218l-41-22v-47l182-109q-20-23-46-41t-56-29v-84q104 27 172 112.5T440-240q0 20-2 38.5t-7 36.5Zm98 0q-5-18-7-36.5t-2-38.5q0-112 68-197.5T760-550v84q-30 11-56 29t-46 41l182 109v47l-41 22-183-110q-8 20-12 42.5t-4 45.5q0 9 .5 18t2.5 18l-74 39Z"/></svg>nnect</span></a></li></div>
+            
+            
+           
+        <li class="hidden md:flex"><a href="">Home</a></li>
+        <li class="hidden md:flex bg-blue-600 p-[13px] rounded-md text-white" ><a href="">Connect</a></li>
+        <li class="hidden md:flex"><a href="">About</a></li>
+        <li class="block md:hidden"  onclick=showSidebar()><button href=""><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="black"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></button></li>
+    </ul>
+ </nav>
+ <div class="mt-[40px] mx-[50px] lg:mx-[120px] ">
+    <div class="flex flex-col md:space-x-[100px] lg:space-x-[200px] lg:flex-row">
+        <div>
+            
+            <div class="max-w-fit md:pl-[40px] flex flex-col md:flex-row lg:flex-col space-x-8 space-y-4  ">
+                <div class="mt-[10px]">
+                    <!-- <p class="text-gray-600 font-light text-[25px] text-center">
+                    The neonate is not a small adult
+                    </p> -->
+                    <p class="text-[45px] lg:text-[55px] font-semibold text-center mt-[-5px] leading-[60px]">
+                    <span >Welcome to</span><br> <span class="text-[#b83280]">Surgical Neonate</span><br>  Connect
+                    </p>
+                    <p class="text-center mt-[50px] md:mt-[20px] mb-[40px]  text-gray-700">
+                    Connect early if you have a neonate in your care <br> who you think may be surgical <br> or who has symptoms you do not understand,<br> like greenish vomitus
+                        </p> 
+                </div>
+                <div>
+                    <img class="max-w-[350px] md:max-w-[600px] max-h-[300px] flex items-center md:items-start" src="images/background.png">
+                    </div>
+            
+            
+                </div>
+            </div>
+        
+            <div class="mt-[30px] w-[400px] md:w-[680px]">
+            <div>
+                <p class="text-[30px] font-bold mb-6 mt-[10px] text-center text-black">Referral Form</p>
+                <form class="bg-white rounded-[8px] shadow-lg p-[20px] shadow-blue-500 mb-[100px]" action="https://formsubmit.co/jesakwe@gmail.com" method="POST"  >
+                  <div class="mb-4">
+                    <label class="block text-sm font-medium mb-2">Name</label>
+                    <input type="text" name="Name" class="w-full p-2 rounded-md" placeholder="Enter your name" required>
+                  </div>
+                  <div class="mb-4">
+                    <label class="block text-sm font-medium mb-2">Designation</label>
+                    <input type="text" name="designation" class="w-full p-2 rounded-md" placeholder="Enter your designation" required>
+                  </div>
+                  <div class="mb-4">
+                    <label class="block text-sm font-medium mb-2">Contact</label>
+                    <input type="text" name="contact" class="w-full p-2 rounded-md" placeholder="Enter your contact" required>
+                  </div>
+                  <div class="mb-4">
+                    <label class="block text-sm font-medium mb-2">Referring Facility</label>
+                    <input type="text" name="referring-facility" class="w-full p-2 rounded-md" placeholder="Enter the referring facility" required>
+                  </div>
+                  <div class="mb-4">
+                    <label class="block text-sm font-medium mb-2">Name of Neonate</label>
+                    <input type="text" name="name-of-neonate" class="w-full p-2 rounded-md" placeholder="Enter the name of neonate" required>
+                  </div>
+                  <div class="mb-4">
+                    <label class="block text-sm font-medium mb-2">Age of Neonate</label>
+                    <input type="number" name="age-of-neonate" class="w-full p-2 rounded-md" placeholder="Enter the age of neonate (days)" required>
+                  </div>
+                  <div class="mb-4">
+                    <label class="block text-sm font-medium mb-2">Referring Diagnosis</label>
+                    <textarea name="referring-diagnosis" class="w-full p-2 rounded-md" rows="3" placeholder="Enter the referring diagnosis" required></textarea>
+                  </div>
+                  <div class="text-center">
+                    <button class="bg-[#b83280] text-white
+                        py-[10px] px-[20px] rounded-[4px] hover:bg-[#9e2a6a]"  type="submit" class="w-full">Submit</button>
+                  </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div>
+    </div>
+        
+ </div>
+ <footer class="bg-blue-950 text-gray-300 py-6 w-full">
+    <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
+        <p class="text-sm  text-gray-300">© 2024 PS Connect.<br> All rights reserved.</p>
+        <ul class="flex space-x-4">
+            <li><a href="#" class="text-gray-300 hover:text-white">Privacy Policy</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white">Terms of Service</a></li>
+            <li><a href="#" class="text-gray-300 hover:text-white">Contact Us</a></li>
+        </ul>
+    </div>
+</footer>
+  <script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+    }
+    function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+    }
+  </script>
+  
+</body>
+</html>
